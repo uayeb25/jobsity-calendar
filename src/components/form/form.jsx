@@ -75,7 +75,7 @@ const Form = ({
   const storeRecord = () => {
     console.log(reminders);
     if (
-      SETTINGS.words - content.length > 30 ||
+      SETTINGS.words - content.length < 0 ||
       duration.length <= 3 ||
       city.length === 0 ||
       subject.length === 0
