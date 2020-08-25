@@ -9,7 +9,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/dashboard" exact component={Dashboard} />
+        <Route path="/" exact component={Dashboard} />
       </Switch>
     </BrowserRouter>
   );
