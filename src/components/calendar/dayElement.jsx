@@ -19,7 +19,7 @@ const DayElement = ({ day, daySelected, updateDaySelected, reminders }) => {
         {reminders[day.toDateString()] && (
           <>
             {reminders[day.toDateString()].slice(0, 3).map((element, index) => (
-              <span className="preview-detail">
+              <span key={index} className="preview-detail">
                 {times[element.start].time}
               </span>
             ))}
